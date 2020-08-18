@@ -1,0 +1,96 @@
+/* Style the tab */
+body {
+	background-color: #33FF7D;
+}
+
+h2 {
+	color : #1F17D1;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #F1F1F1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color : #FFFFFF;
+  background-color: #1F1F1F;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* 員工表格樣式 */
+/* https://www.w3schools.com/css/css_table.asp */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+.employees {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.employees td, .employees th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.employees tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.employees tr:hover {
+	background-color: #ddd;
+}
+
+.employees th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.err_red {
+	color: #FF0000
+}
+
+.info_blue {
+	color: #0000FF
+}
+
+.disappear {
+	display:none
+}
